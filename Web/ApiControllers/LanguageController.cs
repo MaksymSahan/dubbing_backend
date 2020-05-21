@@ -8,7 +8,6 @@ namespace SoftServe.ITAcademy.BackendDubbingProject.Web.ApiControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors(origins: "https://maksymsahan.github.io./", headers: "*", methods: "*")]
     public class LanguageController : ControllerBase
     {
         private readonly IAdministrationService _administrationMicroservice;
