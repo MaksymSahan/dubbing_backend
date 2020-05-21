@@ -20,7 +20,7 @@ namespace SoftServe.ITAcademy.BackendDubbingProject.Administration.Infrastructur
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=awsrds.c3dau9pnded7.eu-central-1.rds.amazonaws.com\\MSSQLSERVER, 1433;Database=myDataBase;User Id=devmaster;Password=needforspeed;");
+            optionsBuilder.UseSqlServer(@"Server=awsrds.c3dau9pnded7.eu-central-1.rds.amazonaws.com, 1433;Database=myDataBase;User Id=devmaster;Password=needforspeed;Trusted_Connection=True;");
         }
     }
 }
